@@ -14,12 +14,15 @@ export default function Testimonials({ currentTrack, setCurrentTrack}:Props) {
   
 
   return (
-    <div>
-      <div className="flex">
-        <Dropdown />
-        <Filter />
+    <div className="m-8 shadow-all rounded-sm" >
+      <div className="toolbar flex justify-between bg-[white] p-4 rounded-t-sm">
+        <div className="flex">
+          <Dropdown />
+          <Filter />
+        </div>
         <Sort />
       </div>
+      <hr className="w-full border-[#D5D8E4] border-[1px]"/>
       <TestimonialsList />
       <Pagination />
     </div>
